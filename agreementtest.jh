@@ -20,3 +20,7 @@ relationship ManyToOne{
 	Agreement{validityPeriod} to TimePeriod
 }
 
+dto * with mapstruct
+service all with serviceImpl
+
+microservice * with hipsterApp
