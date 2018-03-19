@@ -20,7 +20,8 @@ relationship ManyToOne{
 	Agreement{validityPeriod} to TimePeriod
 }
 
+entity Test{
+	vela String,
+    malo String
+}
 dto * with mapstruct
-service all with serviceImpl
-
-microservice * with hipsterApp
