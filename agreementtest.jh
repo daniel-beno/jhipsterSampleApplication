@@ -1,0 +1,22 @@
+entity Agreement {
+	dateOfSigning Date,
+}
+
+entity TimePeriod{
+	startDateTime Datetime,
+    endDateTIme Datetime
+}
+
+entity AgreementSpecification{
+	type String,
+    status String
+}
+
+relationship ManyToOne{
+	AgreementSpecification{validityPeriod} to TimePeriod
+}
+
+relationship ManyToOne{
+	Agreement{validityPeriod} to TimePeriod
+}
+
