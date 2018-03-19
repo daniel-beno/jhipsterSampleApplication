@@ -1,10 +1,10 @@
 entity Agreement {
-	dateOfSigning LocalDate
+	dateOfSigning String
 }
 
 entity TimePeriod{
-	startDateTime LocalDate,
-    endDateTIme LocalDate
+	startDateTime String,
+    endDateTIme String
 }
 
 entity AgreementSpecification{
@@ -12,13 +12,6 @@ entity AgreementSpecification{
     status String
 }
 
-relationship ManyToOne{
-	AgreementSpecification{validityPeriod} to TimePeriod
-}
-
-relationship ManyToOne{
-	Agreement{validityPeriod} to TimePeriod
-}
 
 entity Test{
 	vela String,
