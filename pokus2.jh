@@ -1,0 +1,20 @@
+entity Agreement {
+	dateOfSigning String
+}
+
+entity TimePeriod{
+	startDateTime String,
+    endDateTIme String
+}
+
+entity AgreementSpecification{
+	type String,
+    status String
+}
+
+
+entity Test{
+	vela String,
+    malo String
+}
+dto * with mapstruct
