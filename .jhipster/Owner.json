@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "car",
+            "otherEntityName": "car",
+            "otherEntityRelationshipName": "owner"
+        }
+    ],
+    "fields": [],
+    "changelogDate": "20180319220201",
+    "entityTableName": "owner",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "jhipsterSampleApplication"
+}
